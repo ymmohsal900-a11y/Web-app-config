@@ -1,1 +1,1 @@
-current_app.logger.info("Microsoft login successful")
+current_app.logger.error("Microsoft login failed")

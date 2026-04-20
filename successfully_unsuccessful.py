@@ -1,9 +1,2 @@
-import logging
-
-def create_app():
-    app = Flask(__name__)
-
-    if not app.debug:
-        logging.basicConfig(level=logging.INFO)
-
-    return app
+if username == "admin" and password == "pass":
+    current_app.logger.info("admin logged in successfully")

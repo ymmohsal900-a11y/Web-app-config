@@ -1,0 +1,13 @@
+import os  
+
+class Config(object):
+    SECRET_KEY = os.environ.get('ac2df92a-66cf-4f47-875b-f5d027c33934')
+
+    BLOB_ACCOUNT = os.environ.get('image11')
+    BLOB_STORAGE_KEY = os.environ.get('cms.database.windows.net')
+    BLOB_CONTAINER = os.environ.get('images')
+
+    SQL_SERVER = os.environ.get('SQL_SERVER')
+    SQL_DATABASE = os.environ.get('cms')
+    SQL_USER_NAME = os.environ.get('cmsadmin')
+    SQL_PASSWORD = os.environ.get('CMS4dmin')

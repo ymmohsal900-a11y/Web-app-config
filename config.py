@@ -1,13 +1,10 @@
-import os  
-
-class Config(object):
-    SECRET_KEY = os.environ.get('SECRET_KEY') or 'your-secret-key'
-
-    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'image11'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'your-storage-key'
-    BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
-
-    SQL_SERVER = os.environ.get('SQL_SERVER') or 'cms.database.windows.net'
-    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'cms'
-    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'cmsadmin'
-    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'CMS4dmin'
+SECRET_KEY=anything
+BLOB_ACCOUNT=images11
+BLOB_CONTAINER=images
+BLOB_STORAGE_KEY=your-key
+SQL_SERVER=your-server.database.windows.net
+SQL_DATABASE=cms
+SQL_USER_NAME=cmsadmin
+SQL_PASSWORD=CMS4dmin
+CLIENT_SECRET=your-secret
+CLIENT_ID=your-client-id

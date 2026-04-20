@@ -1,2 +1,1 @@
-SQL_PASSWORD = os.environ.get('SQL_PASSWORD')
-BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY')
+BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'images11'

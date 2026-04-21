@@ -1,0 +1,3 @@
+logger.info("User started login")
+logger.info("Login success")
+logger.error("Login failed")

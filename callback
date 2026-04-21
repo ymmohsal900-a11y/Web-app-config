@@ -1,0 +1,22 @@
+def getAToken():
+    code = request.args.get('code')
+
+    if not code:
+        return "Login failed"
+
+    msal_app = msal.ConfidentialClientApplication(
+        CLIENT_ID,
+        authority=AUTHORITY,
+        client_credential=CLIENT_SECRET
+    )
+
+    result = msal_app.acquire_token_by_authorization_code(
+        code,
+        scopes=SCOPE,
+        redirect_uri=REDIRECT_URI
+    )
+
+    if "access_token" in result:
+        return "Login successful"
+    else:
+        return "Login failed"

@@ -1,0 +1,8 @@
+import msal
+from flask import redirect, request, session
+
+CLIENT_ID = "22318751-8fd9-4bbe-a4db-e04991f263b5"
+CLIENT_SECRET = "6b7199ea-771f-4cb6-951b-f5e131850d16"
+AUTHORITY = "https://login.microsoftonline.com/common"
+REDIRECT_URI = "https://udacitycms/getAToken"
+SCOPE = ["User.Read"]
